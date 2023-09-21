@@ -1,11 +1,13 @@
+
 <ul>
-<li> <%= @contato.name %>
-    <%= @contato.telefone %>
-    <%= @contato.observacoes %>
-    <%= link_to "Editar Contato", edit_contato_path(@contato) %>
+  <li class="contato-item">
+    <span class="contato-name"><%= @contato.name %></span>
+    <span class="contato-telefone"><%= @contato.telefone %></span>
+    <span class="contato-observacoes"><%= @contato.observacoes %></span>
+    <%= link_to "Editar Contato", edit_contato_path(@contato), class: "editar-link" %>
     <%= link_to "Destroy", contato_path(@contato), data: {
                     turbo_method: :delete,
-                    turbo_confirm: "deseja deletar?"
-                  } %>
-</li>
-<ul>
+                    turbo_confirm: "Deseja deletar?"
+                  }, class: "destroy-link" %>
+  </li>
+</ul>
