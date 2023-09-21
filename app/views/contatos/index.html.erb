@@ -1,3 +1,8 @@
 
-<h1 class="title">----lista de Contatos----</h1>
-<h5 class="subtitle">faça aqui a sua busca por um contato</h5>
+<% @contatos.each do |contato| %>
+<ul>
+<li><%= link_to contato.name, contato %></li>
+</ul>
+<% end %>
+
+<%= link_to "Novo Contato", new_contato_path(@contato) %>
