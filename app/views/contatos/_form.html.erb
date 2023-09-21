@@ -4,7 +4,7 @@
     <%= form.label :name %><br>
     <%= form.text_field :name %>
     <% @contato.errors.full_messages_for(:name).each do |message| %>
-      <div><%= message %></div>
+      <div class="error"><%= message %></div>
     <% end %>
   </div>
 
@@ -12,7 +12,7 @@
     <%= form.label :telefone %><br>
     <%= form.text_field :telefone %>
     <% @contato.errors.full_messages_for(:telefone).each do |message| %>
-      <div><%= message %></div>
+      <div class="error"><%= message %></div>
     <% end %>
   </div>
 
