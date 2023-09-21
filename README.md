@@ -1,24 +1,33 @@
-# README
+# Projeto Ruby on Rails - Gerenciador de Telefones
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Gerenciador de Telefones! Este projeto tem como objetivo proporcionar uma experiência prática de desenvolvimento web utilizando o framework Ruby on Rails. Ele oferece funcionalidades essenciais para gerenciar informações de contatos, permitindo aos usuários adicionar, editar e excluir números de telefone.
 
-Things you may want to cover:
+## Funcionalidades Principais
 
-* Ruby version
+- **Adicionar Telefones:** Os usuários podem adicionar novos números de telefone, associando-os a um contato existente ou criando um novo contato.
 
-* System dependencies
+- **Editar Telefones:** É possível editar as informações dos telefones, como o número nome e obervações
 
-* Configuration
+- **Excluir Telefones:** Os usuários têm a opção de remover telefones da lista de contatos.
 
-* Database creation
+## Como Usar
 
-* Database initialization
+1. Certifique-se de ter o Ruby e o Ruby on Rails instalados em seu sistema. Caso contrário, você pode seguir as instruções de instalação em [https://rubyonrails.org/](https://rubyonrails.org/).
 
-* How to run the test suite
+2. Clone este repositório para o seu sistema:
 
-* Services (job queues, cache servers, search engines, etc.)
+   ```bash
+   git clone https://github.com/seu-usuario/gerenciador-telefones-rails.git
+   ```
+3. Acesse o diretório do projeto:
+ **cd agendatelefonica**
+4. Instale as dependências do Rails:
+ **bundle install**
+5. Configure o banco de dados (por exemplo, utilizando SQLite) e execute as migrações:
+   **rails db:create
+rails db:migrate**
+6. inicie o servidor:
+   **rails server**
 
-* Deployment instructions
-
-* ...
+**Acesse o aplicativo em seu navegador em http://localhost:3000.**
+ 
