@@ -1,8 +1,14 @@
-
+<div class="contactName-2">
 <% @contatos.each do |contato| %>
-<ul>
-<li><%= link_to contato.name, contato %></li>
-</ul>
-<% end %>
+<div class="contactName">
 
+<ul class="list-contact">
+<li class="iten-list-contact"><%= link_to contato.name, contato %></li>
+</ul>
+</div>
+
+<% end %>
+</div>
+<div class="button">
 <%= link_to "Novo Contato", new_contato_path(@contato) %>
+</div>
