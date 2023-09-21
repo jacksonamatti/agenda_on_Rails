@@ -154,3 +154,6 @@ ul {
     padding: 5px 10px;
   }
   
+  .error{
+    color: red;
+  }
