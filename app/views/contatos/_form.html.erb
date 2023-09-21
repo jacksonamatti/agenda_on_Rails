@@ -1,0 +1,27 @@
+
+<%= form_with model: @contato do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+    <% @contato.errors.full_messages_for(:name).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :telefone %><br>
+    <%= form.text_field :telefone %>
+    <% @contato.errors.full_messages_for(:telefone).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :observacoes %><br>
+    <%= form.text_area :observacoes %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
